@@ -7,8 +7,8 @@ const compression = require('compression');
 const { body, validationResult } = require('express-validator');
 require('dotenv').config();
 
-const facebookRoutes = require('./routes/facebook');
-const healthRoutes = require('./routes/health');
+const facebookRoutes = require('./routing/facebook');
+const healthRoutes = require('./routing/health');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -98,3 +98,4 @@ app.listen(PORT, () => {
 });
 
 module.exports = app;
+
